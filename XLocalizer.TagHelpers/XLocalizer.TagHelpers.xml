@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>XLocalizer.TagHelpers</name>
+    </assembly>
+    <members>
+        <member name="T:XLocalizer.TagHelpers.LocalizationTagHelperBase">
+            <summary>
+            base class for localize tag helpers
+            </summary>
+        </member>
+        <member name="P:XLocalizer.TagHelpers.LocalizationTagHelperBase.Args">
+            <summary>
+            pass array of objects for arguments
+            </summary>
+        </member>
+        <member name="P:XLocalizer.TagHelpers.LocalizationTagHelperBase.Culture">
+            <summary>
+            Localize or translate contents to the specified target culture. Default is current culture.
+            </summary>
+        </member>
+        <member name="P:XLocalizer.TagHelpers.LocalizationTagHelperBase.ResourceSource">
+            <summary>
+            Type of the localized resource
+            </summary>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizationTagHelperBase.#ctor(XLocalizer.IXHtmlLocalizerFactory)">
+            <summary>
+            Initialize a new instance of LocaizationTagHelperBase
+            </summary>
+            <param name="localizerFactory"></param>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizationTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XLocalizer.TagHelpers.LocalizeAttributesTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+            
+        </member>
+        <member name="P:XLocalizer.TagHelpers.LocalizeAttributesTagHelper.Localize">
+            <summary>
+            Bool value, true to localize content
+            </summary>
+        </member>
+        <member name="P:XLocalizer.TagHelpers.LocalizeAttributesTagHelper.LocalizeAttribute">
+            <summary>
+            localize custom attribute fields
+            </summary>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeAttributesTagHelper.#ctor(XLocalizer.IXHtmlLocalizerFactory,XLocalizer.IXStringLocalizerFactory)">
+            <summary>
+            Initialize a new instance of LocaizatAttributesTagHelper
+            </summary>
+            <param name="htmlFactory"></param>
+            <param name="stringFactory"></param>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeAttributesTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+        <member name="T:XLocalizer.TagHelpers.LocalizeTagHelper">
+            <summary>
+            Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>
+            </summary>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeTagHelper.#ctor(XLocalizer.IXHtmlLocalizerFactory)">
+            <summary>
+            Initialize a new instance of LocalizeTagHelper
+            </summary>
+            <param name="localizerFactory"></param>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
