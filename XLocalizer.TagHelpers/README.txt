@@ -13,5 +13,5 @@ Localize view with html attribute:
 <h1 localize-content>Welcome</h1>
 ` 
 
-Repository: https://github.com/LazZiya/XLocalizer.TagHelpers
-Docs: https://docs.ziyad.info/en/XLocalizer/v1.0/localizing-views.md
+- Docs: https://docs.ziyad.info/en/XLocalizer/v1.0/localizing-views.md
+- Repository: https://github.com/LazZiya/XLocalizer.TagHelpers
