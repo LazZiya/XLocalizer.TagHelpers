@@ -69,6 +69,26 @@
             <param name="output"></param>
             <returns></returns>
         </member>
+        <member name="T:XLocalizer.TagHelpers.LocalizeSelectTagHelper">
+            <summary>
+            Localize select items
+            </summary>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeSelectTagHelper.#ctor(XLocalizer.IXStringLocalizerFactory,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)">
+            <summary>
+            Initialize a new instance of LocalizeSelectTagHelper
+            </summary>
+            <param name="localizerFactory"></param>
+            <param name="htmlGenerator"></param>
+        </member>
+        <member name="M:XLocalizer.TagHelpers.LocalizeSelectTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+            <summary>
+            process localize-select tag helper
+            </summary>
+            <param name="context"></param>
+            <param name="output"></param>
+            <returns></returns>
+        </member>
         <member name="T:XLocalizer.TagHelpers.LocalizeTagHelper">
             <summary>
             Localization tag helper, localize text inside <![CDATA[<localize>Hellow</localize>]]>

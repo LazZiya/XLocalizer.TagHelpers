@@ -72,7 +72,7 @@ namespace XLocalizer.TagHelpers
             }
         }
 
-        private LocalizedHtmlString GetLocalizedHtmlString(string str)
+        internal LocalizedHtmlString GetLocalizedHtmlString(string str)
         {
             var _loc = ResourceSource == null
                 ? _localizerFactory.Create()
