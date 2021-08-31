@@ -1,5 +1,4 @@
-﻿using XLocalizer.Common;
-using Microsoft.AspNetCore.Razor.TagHelpers;
+﻿using Microsoft.AspNetCore.Razor.TagHelpers;
 using System.Threading.Tasks;
 
 namespace XLocalizer.TagHelpers

@@ -59,12 +59,14 @@ namespace XLocalizer.TagHelpers
                 //e.g. localize-att-title="Image title" will be title="Resim başlığı"
                 var removeAttributes = new List<TagHelperAttribute>();
 
+                // Create string localization instance
+                var _loc = _stringFactory.Create();
+                
                 foreach (var att in output.Attributes)
                 {
                     //find all custom attributes that starts with localize-att-*
                     if (att.Name.StartsWith(_LocalizeAtt))
                     {
-                        var _loc = _stringFactory.Create();
 
                         //get localized attribute value
                         var localAttValue = _loc[att.Value.ToString()];
